@@ -135,3 +135,26 @@ body {
     top: 600px;
     left: 100px;
 }
+
+
+#recognition {
+    display: flex;
+    flex-direction: column;
+}
+#recognitionTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#recognitionText {
+    text-align: center;
+    width: 170px;
+}
+#recognitionBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
