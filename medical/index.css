@@ -280,7 +280,7 @@ body {
 #bottomContainer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     
 }
 
@@ -313,5 +313,28 @@ body {
     width: 300px;
     height: 200px;
     margin-right: 110px;
-    margin-top: 30px;
+    margin-top: 40px;
+}
+
+#globeMarker {
+    position: relative;
+    top: 23px;
+    left: 110px
+}
+
+#lastQuestion{
+    margin-left: 130px;
+}
+
+
+#copyright {
+    margin-top: 40px;
+    margin-left: 430px;
+    font-size: 9px;
+}
+
+#privacy {
+    margin-bottom: 20px;
+    margin-left: 230px;
+    font-size: 9px;
 }
