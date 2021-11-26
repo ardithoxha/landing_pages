@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid black; */
+    
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#homeContainer {
+    background-color: #00A6C6;
+    width: 100%;
+    
+}
+
+#home {
+    width: 1140px;
+    text-align: end;
+    background-color: #00A6C6;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin: auto;
+    padding: 8px;
+    
+}
+
+#home>span {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#logoStretchContainer {
+    background-color: #424244;
+    width: 100%;
+    
+}
+#logoContainer {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    
+}
+
+#logo{
+    margin: 5px;
+}
+
+#title {
+    min-width: 700px;
+    font-size: 40px;
+    font-weight: normal;
+    padding: 10px 0 0 15px;
+    
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 3px 0 0 20px;
+    
+}
+
+#patient {
+    border-radius: 20px;
+    background-color: inherit;
+    color: white;
+    border: 2px solid white;
+    font-size: 13px;
+    padding: 5px 10px 3px 5px;
+}
+
+#fileIcon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+#appointment {
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    font-size: 13px;
+    margin-top: 5px;
+    padding: 5px 0 3px 5px;
+}
+
+#aptIcon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    
+}
