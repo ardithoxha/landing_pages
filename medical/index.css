@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    /* outline: 1px solid black; */
     
 }
 
@@ -31,8 +30,28 @@ body {
     font-size: 17px;
     font-weight: bold;
     margin: auto;
-    padding: 4px;
+    padding: 8px;
     
+}
+
+#phone {
+    margin-left: 7px;
+    margin-right: 7px;
+    font-weight: normal;
+}
+
+#phone:hover {
+    text-decoration: underline;
+}
+
+#homeIcone {
+    position: relative; 
+    top: 7px;
+}
+
+#homeIcon:hover {
+    
+    cursor: pointer;
 }
 
 #home>span {
@@ -56,6 +75,10 @@ body {
 
 #logo{
     margin: 5px;
+    
+}
+#logo:hover {
+    cursor: pointer;
 }
 
 #title {
@@ -80,7 +103,12 @@ body {
     border: 2px solid white;
     font-size: 13px;
     margin-top: 5px;
-    padding: 5px 10px 3px 5px;
+    padding: 5px 10px 3px 10px;
+}
+
+#patient:hover {
+    background-color: #00A6C6;
+    border: 2px solid #00A6C6;;
 }
 
 #appointment {
@@ -90,9 +118,13 @@ body {
     border: 2px solid white;
     font-size: 13px;
     margin-top: 5px;
-    padding: 5px 0 3px 5px;
+    padding: 5px 0 3px 10px;
 }
 
+#appointment:hover {
+    background-color: #00A6C6;
+    border: 2px solid #00A6C6;;
+}
 
 #menuTabContainer {
     width: 100%;
@@ -114,8 +146,14 @@ body {
     
 }
 
+#menuTab>div:hover {
+    background-color: #00A6C6;
+    cursor: pointer;
+}
+
 #menuTab>div {
-    margin: 5px 35px 0 0;
+    height: 35px;
+    padding: 5px 15px 10px;
 }
 
 #mainImage {
@@ -214,6 +252,11 @@ body {
     font-size: 20px;
 }
 
+#NAmain>div>strong:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #allNewsContainer {
     display: flex;
     justify-content: center;
@@ -227,6 +270,13 @@ body {
     width: auto;
     padding: 2px 100px;
     margin: 10px 0 40px 0;
+}
+
+#allNews:hover {
+    cursor: pointer;
+    border: 2px #00A6C6 solid;
+    background-color: white;
+    color: #00A6C6
 }
 
 
@@ -258,6 +308,7 @@ body {
     border-bottom: 1px solid #00A6C6;
 }
 
+
 #bookButton {
     width: 150px;
     background-color: #35AEC2;
@@ -266,7 +317,13 @@ body {
     padding: 5px 30px;
     color: white;
     border: 2px white solid;
+    box-shadow: 0 0 3px gray;
     margin: 40px 0 0 120px;
+}
+
+
+#bookButton:hover {
+    cursor: pointer;
 }
 
 #powered {
@@ -280,13 +337,20 @@ body {
 #bottomContainer {
     display: flex;
     justify-content: space-between;
-    /* margin-bottom: 50px; */
     
 }
 
 #contactInfo {
     margin-left: 110px;
     margin-top: 30px;
+}
+#contactInfo>div>img {
+    position: relative;
+    left: -7px;
+}
+
+#contactInfo>div>img:hover {
+    cursor: pointer;
 }
 
 #address {
@@ -314,6 +378,10 @@ body {
     height: 200px;
     margin-right: 110px;
     margin-top: 40px;
+}
+
+#map:hover {
+    cursor: pointer;
 }
 
 #globeMarker {
