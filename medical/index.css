@@ -117,3 +117,21 @@ body {
 #menuTab>div {
     margin: 5px 35px 0 0;
 }
+
+#mainImage {
+    width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+    
+}
+
+#imageText {
+    position: absolute;
+    max-width: 700px;
+    color: #C60033;
+    font-size: 55px;
+    font-weight: bolder;
+    text-shadow: 5px 5px 10px white, -5px -5px 10px white, 5px -5px 10px white, -5px 5px 10px white;
+    top: 600px;
+    left: 100px;
+}
