@@ -1,35 +1,33 @@
 * {
     box-sizing: border-box;
-    
+    /* outline: 1px solid red; */
 }
 
 body {
     
     margin: 0;
     padding: 0;
-}
-
-#container {
-    display: flex;
-    flex-direction: column;
-    
+    min-width: 360px;
     
 }
 
 #homeContainer {
+    display: flex;
+    justify-content: center;
     background-color: #00A6C6;
     width: 100%;
     
 }
 
 #home {
-    width: 1140px;
+    width: 82vw;
+    min-width: 992px;
     text-align: end;
     background-color: #00A6C6;
     color: white;
     font-size: 17px;
     font-weight: bold;
-    margin: auto;
+    /* margin: auto; */
     padding: 8px;
     
 }
@@ -60,40 +58,49 @@ body {
 }
 
 #logoStretchContainer {
+    display: flex;
+    justify-content: center;
     background-color: #424244;
     width: 100%;
     
+    
 }
 #logoContainer {
-    width: 1140px;
-    margin: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    min-width: 992px;
+    width: 82vw;
     color: white;
-    
 }
 
 #logo{
-    margin: 5px;
-    
+    width: 192px;
 }
+
 #logo:hover {
     cursor: pointer;
 }
 
 #title {
-    min-width: 700px;
-    font-size: 40px;
+    min-width: 650px;
+    width: 60%;
+    font-size: 50px;
     font-weight: normal;
     padding: 10px 0 0 15px;
-    
 }
 
 #buttons {
+    min-width: 150px;
     display: flex;
     flex-direction: column;
-    margin: 3px 0 0 40px;
-    
+}
+
+#buttons>div {
+    max-width: 200px;
+    margin: 5px 10px;
+    padding: 8px;
 }
 
 #patient {
@@ -102,8 +109,6 @@ body {
     color: white;
     border: 2px solid white;
     font-size: 13px;
-    margin-top: 5px;
-    padding: 5px 10px 3px 10px;
 }
 
 #patient:hover {
@@ -117,8 +122,6 @@ body {
     color: white;
     border: 2px solid white;
     font-size: 13px;
-    margin-top: 5px;
-    padding: 5px 0 3px 10px;
 }
 
 #appointment:hover {
@@ -127,23 +130,26 @@ body {
 }
 
 #menuTabContainer {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 50px;
+    min-height: 50px;
     background-color: #72BE58;
+    overflow: hidden;
     
 }
 
 #menuTab {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: end;
-    width: 1140px;
-    height: 30px;
+    width: 82vw;
+    min-width: 992px;
+    min-height: 35px;
     font-size: 15px;
     font-weight: lighter;
-    margin: auto;
     color: white;
-    
 }
 
 #menuTab>div:hover {
@@ -156,28 +162,51 @@ body {
     padding: 5px 15px 10px;
 }
 
+#mobileMenu {
+    display: none;
+}
+
+#navBar {
+    color: white;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+#myLinks {
+    font-size: 15px;
+    font-weight: lighter;
+    color: white;
+    padding-left: 20px;
+}
+
+#myLinks>div {
+    margin: 10px 0;
+}
+
 #mainImage {
     width: 100%;
-    min-height: 100vh;
-    z-index: -1;
-    
+    z-index: -1;    
 }
 
 #imageText {
-    position: absolute;
-    max-width: 700px;
+    max-width: 750px;
     color: #C60033;
-    font-size: 55px;
+    font-size: 4vw;
     font-weight: bolder;
     text-shadow: 5px 5px 10px white, -5px -5px 10px white, 5px -5px 10px white, -5px 5px 10px white;
-    top: 600px;
-    left: 100px;
+    position: absolute;
+    /* top: 8px; */
+    top: 35vw;
+    left: 4vw;
 }
+
+
 
 
 #recognition {
     display: flex;
     flex-direction: column;
+    outline: 1px red solid;
 }
 #recognitionTop {
     display: flex;
@@ -209,9 +238,10 @@ body {
     color: #A0C36D;
     font-size: 25px;
     margin: 50px 0 40px;
+    
 }
 #welcomeText {
-    width: 1100px;
+    width: 81vw;
     margin: 0 auto;
     color: white;
     font-size: 15px;
@@ -234,7 +264,7 @@ body {
 }
 
 #NAmainContainer {
-    width: 1100px;
+    width: 81vw;
     margin: 0 auto;
 }
 
@@ -296,7 +326,7 @@ body {
 }
 
 #healthText {
-    width: 1100px;
+    width: 81vw;
     font-size: 15px;
     margin: 15px auto 40px;
 }
@@ -305,6 +335,8 @@ body {
 #bookingContainer {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 0 40px 100px;
     border-bottom: 1px solid #00A6C6;
 }
 
@@ -318,7 +350,7 @@ body {
     color: white;
     border: 2px white solid;
     box-shadow: 0 0 3px gray;
-    margin: 40px 0 0 120px;
+    
 }
 
 
@@ -327,23 +359,28 @@ body {
 }
 
 #powered {
+    text-align: center;
     width: 150px;
     font-size: 9px;
-    margin: 5px 0 40px 145px;
+    /* margin: 5px 0 40px 145px; */
 }
-
-
 
 #bottomContainer {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
     
 }
 
-#contactInfo {
-    margin-left: 110px;
-    margin-top: 30px;
+#bottomContainerInner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 872px;
+    width: 82vw;
+    padding-top: 10px
 }
+
 #contactInfo>div>img {
     position: relative;
     left: -7px;
@@ -374,35 +411,134 @@ body {
 }
 
 #map {
+    min-width: 300px;
     width: 300px;
+    min-height: 200px;
     height: 200px;
-    margin-right: 110px;
-    margin-top: 40px;
 }
 
 #map:hover {
     cursor: pointer;
 }
 
-#globeMarker {
-    position: relative;
-    top: 23px;
-    left: 110px
+#lastQuestionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 20px 0 0 120px;
 }
 
 #lastQuestion{
-    margin-left: 130px;
+    margin-left: 5px;
 }
 
 
 #copyright {
+    display: flex;
+    justify-content: center;
     margin-top: 40px;
-    margin-left: 430px;
     font-size: 9px;
 }
 
 #privacy {
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
-    margin-left: 230px;
     font-size: 9px;
+}
+
+@media (max-width: 992px) {
+    #home {
+        min-width: 320px;
+        width: 100%;
+    }
+
+    #logoContainer {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    #title {
+        font-size: 4.1vw;
+        min-width: 320px;
+        text-align: center;
+        width: 66vw;
+    }
+
+    #menuTab {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    #bottomContainerInner {
+        min-width: 95%;
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 742px) {
+
+    
+    #logoContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #title {
+        font-size: 23px;
+    }
+
+    #buttons {
+        flex-direction: row;
+    }
+
+    #menuTabContainer {
+        justify-content: flex-start;
+    }
+
+    #menuTab {
+        display: none;
+    }
+
+    #mobileMenu {
+        display: flex;
+        flex-direction: column;
+    }
+    #myLinks {
+        display: none;
+    }
+
+    #imageText {
+        /* top: 75vw; */
+    }
+
+    #bookingContainer {
+        align-items: flex-start;
+        padding: 40px 0 40px 20px;
+    }
+
+    #bottomContainerInner {
+        flex-direction: column;
+        margin-left: 7px;
+    }
+
+    #map {
+        margin: 20px 0 0 3vw;
+    }
+
+    #copyright, #privacy {
+        justify-content: start;
+        margin-left: 3vw;
+    }
+
+    #lastQuestionContainer {
+        padding-left: 3vw;
+    }
+}
+
+@media (max-width: 420px) {
+    #imageText {
+        /* top: 100vw; */
+    }
 }
